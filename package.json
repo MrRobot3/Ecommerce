@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^11.4.1",
+    "nodemon": "^2.0.20"
+  },
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRobot3/Ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrRobot3/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/MrRobot3/Ecommerce#readme",
+  "description": ""
+}
