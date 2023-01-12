@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    <img src="/public/img/loader.gif" alt="" class="loader">
+    <img src="/img/loader.gif" alt="" class="loader">
+
+
     <div class="container">
-        <img src="/public/img/dark-logo.png" alt="">
+        <img src="/img/dark-logo.png" class="logo" alt="">
         <div>
             <input type="text" autocomplete="off" id="name" placeholder="name"> 
             <input type="email" autocomplete="off" id="email" placeholder="email"> 
             <input type="password" autocomplete="off" id="password" placeholder="password"> 
             <input type="text" autocomplete="off" id="number" placeholder="number"> 
-            <input type="checkbox" autocomplete="off" id="terms-and-cond"> 
+            <input type="checkbox" class="checkbox" autocomplete="off" id="terms-and-cond"> 
             <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
             <br>
             <input type="checkbox" class="checkbox" id="notification">
@@ -25,6 +27,11 @@
         </div>
         <a href="login.html" class="link"> already have an account? Log in here</a>
     </div>
+    <div class="alert-box">
+        <img src="img/error.png" class="alert-img" alt="">
+        <p class="alert-msg"> Error message</p>
+    </div>
+    
     
 </body>
 </html>

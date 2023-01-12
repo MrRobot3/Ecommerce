@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -17,4 +18,128 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100px;
+}
+/* form */
+
+.logo{
+    height: 80px;
+    display: block;
+    margin: 0 auto 50px;
+} 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea{
+    display: block; 
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 20px auto;
+    text-transform: capitalize;
+    color:#383838;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.05);
+    font-family: 'roboto', sans-serif;
+}
+::placeholder{
+    color:#383838
+}
+.submit-btn{
+    border-radius: 2px ;
+    text-transform: capitalize;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    width: 300px;
+    text-align: center;
+    margin: 30px 0;
+    background-color: #383838;
+    border-style: none;
+    color: #fff;
+    display: block;
+}
+.checkbox{
+    -webkit-appearance: none; /*verificar*/
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background:#fff;
+    border:1px solid #383838;
+    cursor: pointer;
+}
+.checkbox:checked{
+    background:#383838;
+}
+.checkbox::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image:url(../img/check.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+    display: none;
+}
+.checkbox:checked::after{
+    display: block;
+}
+label{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #383838;
+}
+label a {
+    color: #383838;
+}
+.link{
+    color: #383838;
+    text-transform: capitalize;
+    text-align: center;
+    display: block ;
+}
+
+/* Error message */
+
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background:#fff;
+    border-radius: 10px;
+    top:50%;
+    box-shadow:0 5px 100px rgba(0,0,0, 0.05);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+}
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+.alert-msg{
+    color: #e24c4b;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-weight: 500;
 }

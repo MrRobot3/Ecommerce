@@ -32,15 +32,15 @@ app.get('/404', (req, res)=>{
     res.sendFile(path.join(staticPath, "404.html"));
 })
 
-app.get('/singup', (req, res)=>{
-    res.sendFile(path.join(staticPath, 'singup.html'))
+app.get('/signup', (req, res)=>{
+    res.sendFile(path.join(staticPath, 'signup.html'))
 })
 
-// Dont actually know how to use it
-// app.get('/404', (req, res)=>{
-//     res.sendFile(path.join(staticPath, "404.html"))
-// });
+//Dont actually know how to use it
+//  app.get('/404', (req, res)=>{
+//      res.sendFile(path.join(staticPath, "404.html"))
+//  });
 
 app.use((req, res)=>{
-    res.redirect('/404');
+   res.redirect('404.html');
 })
