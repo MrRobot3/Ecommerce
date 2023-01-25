@@ -36,7 +36,7 @@ app.get('/signup', (req, res)=>{
     res.sendFile(path.join(staticPath, 'signup.html'))
 })
 
-//Dont actually know how to use it
+//Don't actually know how to use it
 //  app.get('/404', (req, res)=>{
 //      res.sendFile(path.join(staticPath, "404.html"))
 //  });
