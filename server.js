@@ -20,8 +20,8 @@ app.use(express.static(staticPath));
 //Routes
 //home route
 
-app.listen(3000, ()=>{
-    console.log('listening on 3000 port')
+app.listen(4000, ()=>{
+    console.log('listening on 4000 port')
 })
 
 app.get("/", (req, res) => {

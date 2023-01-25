@@ -10,11 +10,34 @@ const submitBtn    = document.querySelector('#submit-btn')
 submitBtn.addEventListener('click', ()=>{
     if(name.value.length < 3){
         showAlert('name must be 3 letters long');
-    }else if(!email){
-
+    }else if(email.value.length==""){
+        showAlert('enter your e-mail');
+    }else if(password.value.length < 8){
+        showAlert('password should be 8 letters long')
+    }else if(number.value.length==""){
+        showAlert('enter your phone number')
+    }else if(Number(number.value) || number.value.length <10){
+        showAlert('invalid number, please enter valid one')
+    }else if(tac.checked = false){
+        showAlert('you must agree to our terms and conditions')
+    }else{
+        //submit form
     }
 })
 
+//alert function
 
+
+const showAlert = (msg)=>{
+    let alertBox = document.querySelector('#alert-box')
+    let alertMsg = document.querySelector('#alert-msg')
+
+    alertMsg.innerHtml = msg
+    alertBox.classList.add('show')
+    setTimeout(()=>{
+        alertBox.classList.remove('show')
+    }, 3000);
+
+}
 
 
